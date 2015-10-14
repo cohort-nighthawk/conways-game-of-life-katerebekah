@@ -8,5 +8,14 @@ namespace GameOfLife
 {
     public class Grid
     {
+        List<Row> World;
+        public Grid (int columns, int rows)
+        {
+
+            for (var i = 0; i < rows; i++)
+            {
+                World.Add(new Row(columns, i));
+            }
+        }
     }
 }

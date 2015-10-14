@@ -6,21 +6,37 @@ using System.Threading.Tasks;
 
 namespace GameOfLife
 {
-    class Cell
+    public class Cell
     {
         public Cell (int x, int y)
         {
-            this.x = x;
-            this.y = y;
+            this.row = x;
+            this.column = y;
         }
 
         public bool IsAlive { get; set; }
 
-        public int neightbors { get; set; }
+        private int neighbors;
+        public int Neighbors
+        {
+            get { return neighbors; }
+            set
+            {
+                if (value > 3 || value < 2)
+                {
+                    IsAlive = false;
+                }
+                else
+                {
+                    IsAlive = true;
+                }
 
-        public int x { get; set; }
+                neighbors = value;
+            }
+        }
+        public int row { get; set; }
 
-        public int y { get; set; }
+        public int column { get; set; }
 
     }
 }
