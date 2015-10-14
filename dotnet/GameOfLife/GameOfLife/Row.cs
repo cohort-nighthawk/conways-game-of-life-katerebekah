@@ -6,14 +6,18 @@ using System.Threading.Tasks;
 
 namespace GameOfLife
 {
-    class Row
+    public class Row
     {
         public List<Cell> GridRow;
         public int RowNumber;
+        public int NumberOfColumns()
+        {
+            return GridRow.Count();
+        }
         public Row( int columns, int rowNumber)
         {
             this.RowNumber = rowNumber;
-            for (var i = 0; i < columns; i++)
+            for (var i = 1; i < columns+1; i++)
             {
                 GridRow.Add(new Cell(rowNumber, i));
             }
