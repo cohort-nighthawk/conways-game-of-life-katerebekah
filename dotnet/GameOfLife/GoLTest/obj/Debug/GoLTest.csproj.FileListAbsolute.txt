@@ -1,0 +1,6 @@
+C:\Users\Kate\CSharp\GoL\dotnet\GameOfLife\GoLTest\bin\Debug\GoLTest.dll
+C:\Users\Kate\CSharp\GoL\dotnet\GameOfLife\GoLTest\bin\Debug\GoLTest.pdb
+C:\Users\Kate\CSharp\GoL\dotnet\GameOfLife\GoLTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Kate\CSharp\GoL\dotnet\GameOfLife\GoLTest\obj\Debug\GoLTest.csprojResolveAssemblyReference.cache
+C:\Users\Kate\CSharp\GoL\dotnet\GameOfLife\GoLTest\obj\Debug\GoLTest.dll
+C:\Users\Kate\CSharp\GoL\dotnet\GameOfLife\GoLTest\obj\Debug\GoLTest.pdb
