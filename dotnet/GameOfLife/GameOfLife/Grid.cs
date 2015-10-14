@@ -8,7 +8,7 @@ namespace GameOfLife
 {
     public class Grid
     {
-        List<Row> World;
+        List<Row> World = new List<Row>{ };
         public int NumberofRows()
         {
             return World.Count();
@@ -16,7 +16,7 @@ namespace GameOfLife
         public Grid (int columns, int rows)
         {
 
-            for (var i = 1; i < rows+1; i++)
+            for (int i = 1; i < rows+1; i++)
             {
                 World.Add(new Row(columns, i));
             }

@@ -11,7 +11,7 @@ namespace GoLTest
         public void NumberofColumnsEqualsNumberofCells()
         {
             var r = new Row(4, 7);
-            Assert.AreEqual(7, r.NumberOfColumns());
+            Assert.AreEqual(4, r.NumberOfColumns());
         }
     }
 }

@@ -8,7 +8,7 @@ namespace GameOfLife
 {
     public class Row
     {
-        public List<Cell> GridRow;
+        public List<Cell> GridRow = new List<Cell> { };
         public int RowNumber;
         public int NumberOfColumns()
         {
@@ -17,9 +17,9 @@ namespace GameOfLife
         public Row( int columns, int rowNumber)
         {
             this.RowNumber = rowNumber;
-            for (var i = 1; i < columns+1; i++)
+            for (int i = 1; i < columns+1; i++)
             {
-                GridRow.Add(new Cell(rowNumber, i));
+                this.GridRow.Add(new Cell(rowNumber, i));
             }
         }
     }
